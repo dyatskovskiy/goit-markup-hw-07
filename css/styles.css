@@ -300,7 +300,7 @@ body {
 
 /*--------Секція зображень: чим ми займаємось------ */
 .gallery {
-  padding-top: 0;
+  display: none;
 }
 
 .gallery-caption {

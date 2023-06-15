@@ -79,4 +79,10 @@
   .features-list-text {
     font-weight: 400;
   }
+
+  /* Features */
+  .gallery {
+    display: block;
+    padding-top: 0;
+  }
 }
