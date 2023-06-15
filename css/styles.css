@@ -119,6 +119,10 @@ body {
   color: var(--dark-color);
 }
 
+/* .logo {
+    margin-right: 76px;
+  } */
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -127,7 +131,6 @@ body {
   color: var(--passive-color);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 
 /* Навігація */
@@ -325,7 +328,6 @@ body {
 
 .team-list-item {
   background-color: var(--white-color);
-  /* flex-basis: calc((100% - 72px) / 4); */
   flex-basis: 100%;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -406,11 +408,9 @@ body {
   justify-content: center;
   column-gap: 12px;
   row-gap: 72px;
-  /* gap: 24px; */
 }
 
 .customers-item {
-  /* flex-basis: calc((100% - 120px) / 6); */
   flex-basis: calc((100% - 12px) / 2);
   height: 88px;
 }
@@ -445,18 +445,22 @@ body {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 72px;
+  /* align-items: baseline; */
 }
 
 .footer-text-container {
-  margin-right: 120px;
-  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-right: 120px; */
+  /* flex-shrink: 0; */
 }
 
 .footer-logo-link {
-  display: inline-block;
+  display: block;
   margin-bottom: 16px;
-  margin-right: 0;
 }
 
 .footer-logo-span {
@@ -474,6 +478,9 @@ body {
 /* Футер: соцмережі */
 
 .footer-soc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-soc-caption {
@@ -518,7 +525,6 @@ body {
 
 /* Футер: форма підписки */
 .footer-subscribe-container {
-  margin-left: auto;
 }
 
 .footer-subscribe-caption {
@@ -528,24 +534,31 @@ body {
   letter-spacing: var(--text-spacing);
   color: var(--white-color);
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-form {
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .footer-label {
+  width: 100%;
 }
 
 .footer-input {
+  display: inline;
   background-color: transparent;
+  outline: none;
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  opacity: 0.6;
   border-radius: 4px;
   padding-left: 16px;
-  width: 264px;
+  width: 100%;
+
   height: 40px;
 
   font-size: 12px;
@@ -561,13 +574,17 @@ body {
   color: var(--white-color);
 }
 
+.footer-input:focus {
+  opacity: 1;
+}
+
 .subscribe-btn {
   font-weight: 500;
   font-size: var(--text-size);
   line-height: var(--typical-lh);
   letter-spacing: 0.04em;
 
-  min-width: 165px;
+  max-width: 165px;
   height: 40px;
   padding: 8px 24px;
   border: none;

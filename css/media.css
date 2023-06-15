@@ -70,6 +70,44 @@
   .customers-icon {
     width: 104px;
   }
+
+  /* Футер */
+  .footer-container {
+    max-width: 582px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .footer-text-container {
+    display: block;
+  }
+
+  .footer-soc-container {
+    display: block;
+  }
+  .footer-soc-list {
+    justify-content: start;
+  }
+
+  .footer-subscribe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-subscribe-caption {
+    text-align: left;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-label {
+    width: 264px;
+  }
 }
 
 /*==============DESKTOP==============*/
@@ -162,5 +200,23 @@
 
   .customers-item {
     flex-basis: calc((100% - 24px * 5) / 6);
+  }
+
+  /* Футер */
+  .footer-container {
+    align-items: baseline;
+    gap: 0;
+  }
+
+  .footer-text-container {
+    margin-right: 120px;
+  }
+
+  /* .footer-soc-container {
+    margin-right: 80px;
+  } */
+
+  .footer-subscribe-container {
+    margin-left: auto;
   }
 }
