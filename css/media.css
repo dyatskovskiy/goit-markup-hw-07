@@ -4,8 +4,6 @@
   .container {
     max-width: 426px;
   }
-
-  /* Features */
 }
 
 /*==============TABLET==============*/
@@ -37,6 +35,20 @@
 
   .features-list-title {
     text-align: left;
+  }
+
+  /* Секція  команди */
+
+  .team-gallery > .container {
+    max-width: 582px;
+  }
+
+  .team-list {
+    column-gap: 24px;
+  }
+
+  .team-list-item {
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 
@@ -80,9 +92,22 @@
     font-weight: 400;
   }
 
-  /* Features */
+  /* Галерея: чим ми займаємось */
   .gallery {
     display: block;
     padding-top: 0;
+  }
+
+  /* Секція  команди */
+  .team-gallery > .container {
+    max-width: 1158px;
+  }
+
+  .team-list {
+    column-gap: 24px;
+  }
+
+  .team-list-item {
+    flex-basis: calc((100% - 72px) / 4);
   }
 }

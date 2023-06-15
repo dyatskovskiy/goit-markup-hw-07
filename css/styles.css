@@ -323,9 +323,13 @@ body {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-/*-------- Секція з фото команди------ */
+/*-------- Секція команди------ */
 .team-gallery {
   background-color: var(--light-color);
+}
+
+.team-gallery > .container {
+  max-width: 294px;
 }
 
 .team-gallery-caption {
@@ -341,12 +345,13 @@ body {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--typical-gap);
+  row-gap: 72px;
 }
 
 .team-list-item {
   background-color: var(--white-color);
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
+  flex-basis: 100%;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
