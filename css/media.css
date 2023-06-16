@@ -4,6 +4,19 @@
   .container {
     max-width: 426px;
   }
+
+  .header-container {
+    max-width: 768px;
+  }
+
+  /* Мобільне меню */
+  .phone-link {
+    font-size: 36px;
+  }
+
+  .menu-soc-list {
+    gap: 56px;
+  }
 }
 
 /*==============TABLET==============*/
@@ -12,6 +25,81 @@
   .container {
     max-width: 766px;
   }
+
+  /*-----------Хедер-----------*/
+  .logo {
+    margin-right: 76px;
+  }
+
+  .mob-menu-open {
+    display: none;
+  }
+  /* Навігація */
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-list-link {
+    position: relative;
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: var(--text-size);
+    line-height: var(--typical-lh);
+    letter-spacing: var(--text-spacing);
+    padding: 24px 0;
+    transition: var(--color-transition);
+  }
+
+  .nav-list-link:is(:hover, :focus) {
+    color: var(--active-color);
+  }
+
+  .nav-underline {
+    color: var(--active-color);
+  }
+  .nav-underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--active-color);
+    border-radius: 2px;
+    left: 0px;
+    bottom: -1px;
+  }
+
+  /* Контакти */
+
+  .address {
+    display: flex;
+    font-style: normal;
+    margin-left: auto;
+  }
+
+  .address-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .address-link {
+    color: var(--text-color);
+    font-size: var(--text-size);
+    line-height: var(--typical-lh);
+    letter-spacing: var(--text-spacing);
+    transition: var(--color-transition);
+  }
+
+  .address-link:is(:hover, :focus) {
+    color: var(--active-color);
+  }
+
+  /*-----------Мейн-----------*/
 
   /* Hero */
   .hero-overlay {
@@ -71,7 +159,7 @@
     width: 104px;
   }
 
-  /* Футер */
+  /*-----------Футер-----------*/
   .footer-container {
     max-width: 582px;
     flex-direction: row;
@@ -122,6 +210,9 @@
     padding-bottom: 120px;
   }
 
+  /*-----------Хедер-----------*/
+
+  /*-----------Мейн-----------*/
   /* Hero */
   .hero {
     padding: 188px 0;
@@ -202,7 +293,7 @@
     flex-basis: calc((100% - 24px * 5) / 6);
   }
 
-  /* Футер */
+  /*-----------Футер-----------*/
   .footer-container {
     align-items: baseline;
     gap: 0;
@@ -211,10 +302,6 @@
   .footer-text-container {
     margin-right: 120px;
   }
-
-  /* .footer-soc-container {
-    margin-right: 80px;
-  } */
 
   .footer-subscribe-container {
     margin-left: auto;

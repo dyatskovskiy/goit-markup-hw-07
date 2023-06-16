@@ -77,6 +77,10 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
 /* Приховати елемент */
 
 /* ------------База------------ */
@@ -114,14 +118,105 @@ body {
   display: flex;
 }
 
+/* Мобільне меню */
+.mob-menu-open {
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background: none;
+  stroke: var(--dark-color);
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white-color);
+  padding: 24px 24px 40px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.mob-menu-close {
+  margin-left: auto;
+  margin-bottom: 32px;
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid hsla(237, 18%, 22%, 0.1);
+  border-radius: 50%;
+  background-color: var(--accent-color) 0.1;
+}
+
+.menu-close-icon {
+  fill: var(--dark-color);
+}
+
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mob-menu-item {
+}
+
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: var(--text-spacing);
+  color: var(--dark-color);
+}
+
+.active-page {
+  color: var(--active-color);
+}
+
+.mob-address {
+  margin-bottom: 48px;
+}
+
+.phone-item {
+  margin-bottom: 40px;
+}
+
+.phone-link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.11;
+
+  letter-spacing: var(--text-spacing);
+  color: var(--passive-color);
+}
+
+.email-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: var(--text-spacing);
+  color: var(--text-color);
+}
+
+.menu-soc-list {
+  display: flex;
+  gap: 32px;
+}
 /* Лого  */
 .header-logo-span {
   color: var(--dark-color);
 }
-
-/* .logo {
-    margin-right: 76px;
-  } */
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -134,69 +229,14 @@ body {
 }
 
 /* Навігація */
-.navigation {
-  display: flex;
-  align-items: center;
-}
 
 .nav-list {
-  display: flex;
-  gap: 40px;
-}
-
-.nav-list-item {
-}
-
-.nav-list-link {
-  position: relative;
-  color: var(--dark-color);
-  font-weight: 500;
-  font-size: var(--text-size);
-  line-height: var(--typical-lh);
-  letter-spacing: var(--text-spacing);
-  padding: 24px 0;
-  transition: var(--color-transition);
-}
-
-.nav-list-link:is(:hover, :focus) {
-  color: var(--active-color);
-}
-
-.nav-underline {
-  color: var(--active-color);
-}
-.nav-underline::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: var(--active-color);
-  border-radius: 2px;
-  left: 0px;
-  bottom: -1px;
+  display: none;
 }
 
 /* Контакти */
 .address {
-  font-style: normal;
-  margin-left: auto;
-}
-
-.address-list {
-  display: flex;
-  gap: 40px;
-}
-
-.address-link {
-  color: var(--text-color);
-  font-size: var(--text-size);
-  line-height: var(--typical-lh);
-  letter-spacing: var(--text-spacing);
-  transition: var(--color-transition);
-}
-
-.address-link:is(:hover, :focus) {
-  color: var(--active-color);
+  display: none;
 }
 
 /* ----------------- Студія Мейн ----------------- */
