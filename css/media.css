@@ -27,6 +27,11 @@
   }
 
   /*-----------Хедер-----------*/
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
   .logo {
     margin-right: 76px;
   }
@@ -52,7 +57,6 @@
     font-size: var(--text-size);
     line-height: var(--typical-lh);
     letter-spacing: var(--text-spacing);
-    padding: 24px 0;
     transition: var(--color-transition);
   }
 
@@ -66,32 +70,33 @@
   .nav-underline::after {
     content: "";
     position: absolute;
+    left: 0px;
+    bottom: -30px;
     width: 100%;
     height: 4px;
     background-color: var(--active-color);
     border-radius: 2px;
-    left: 0px;
-    bottom: -1px;
   }
 
   /* Контакти */
 
   .address {
-    display: flex;
+    display: block;
     font-style: normal;
     margin-left: auto;
   }
 
   .address-list {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .address-link {
     color: var(--text-color);
-    font-size: var(--text-size);
-    line-height: var(--typical-lh);
-    letter-spacing: var(--text-spacing);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     transition: var(--color-transition);
   }
 
@@ -211,6 +216,32 @@
   }
 
   /*-----------Хедер-----------*/
+
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .header-container {
+    align-items: center;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .address-link {
+    color: var(--text-color);
+    font-size: var(--text-size);
+    line-height: var(--typical-lh);
+    letter-spacing: var(--text-spacing);
+  }
+
+  .nav-list .nav-underline::after {
+    bottom: -26px;
+  }
 
   /*-----------Мейн-----------*/
   /* Hero */
