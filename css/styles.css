@@ -564,8 +564,6 @@ body {
 }
 
 /* Футер: форма підписки */
-.footer-subscribe-container {
-}
 
 .footer-subscribe-caption {
   font-weight: 500;
@@ -650,15 +648,18 @@ body {
 /*====================ПОРТФОЛІО====================*/
 
 .projects {
-  padding-top: 96px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 /*--------Фільтр------ */
 .filters-list {
   display: flex;
-  gap: var(--typical-gap);
-  justify-content: center;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: var(--typical-gap);
+  row-gap: 16px;
+  margin-bottom: 48px;
 }
 
 .filters-btn {
@@ -670,7 +671,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--passive-color);
   background: var(--light-color);
-  padding: 12px 24px;
+  padding: 8px 16px;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   transition: var(--color-transition), var(--bg-transition),
@@ -689,13 +690,14 @@ body {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  /* column-gap: 24px; */
   row-gap: 48px;
 }
 
 .card-item {
   background: var(--white-color);
-  flex-basis: calc((100% - 24px * 2) / 3);
+  /* flex-basis: calc((100% - 24px * 2) / 3); */
+  max-width: 396px;
 }
 
 .card-link {

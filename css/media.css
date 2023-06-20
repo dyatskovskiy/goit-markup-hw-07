@@ -201,6 +201,26 @@
   .footer-label {
     width: 264px;
   }
+
+  /* PORTFOLIO */
+  .projects {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filters-list {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .card-set {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .card-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
 }
 
 /*==============DESKTOP==============*/
@@ -336,5 +356,24 @@
 
   .footer-subscribe-container {
     margin-left: auto;
+  }
+
+  /* PORTFOLIO */
+
+  .projects {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .filters-list {
+    margin-bottom: 72px;
+  }
+
+  .card-set {
+    row-gap: 48px;
+  }
+
+  .card-item {
+    flex-basis: calc((100% - 24px * 2) / 3);
   }
 }
