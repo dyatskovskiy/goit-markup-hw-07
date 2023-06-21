@@ -9,6 +9,11 @@
     max-width: 768px;
   }
 
+  .modal {
+    min-width: unset;
+    width: 408px;
+  }
+
   /* Мобільне меню */
   .phone-link {
     font-size: 36px;
@@ -16,6 +21,10 @@
 
   .menu-soc-list {
     gap: 56px;
+  }
+
+  .card-caption {
+    font-size: 20px;
   }
 }
 
@@ -37,6 +46,10 @@
   }
 
   .mob-menu-open {
+    display: none;
+  }
+
+  .mob-menu {
     display: none;
   }
   /* Навігація */
@@ -224,6 +237,7 @@
   .filters-list {
     justify-content: center;
     margin-bottom: 64px;
+    max-width: unset;
   }
 
   .card-set {
